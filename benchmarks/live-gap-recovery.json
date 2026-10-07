@@ -1,0 +1,145 @@
+{
+  "product": "BTC-USD",
+  "elapsed_seconds": 35.005189,
+  "metrics": {
+    "received": 422,
+    "processed": 387,
+    "control_processed": 22,
+    "published": 387,
+    "snapshots": 2,
+    "reconnects": 1,
+    "injected_drops": 1,
+    "invalidations": {
+      "sequence_gap": 1
+    },
+    "queue_peak_messages": 41,
+    "queue_peak_bytes": 4566401,
+    "queue_dwell_us": {
+      "count": 410,
+      "sample_count": 410,
+      "mean": 11677.174,
+      "p50": 82.325,
+      "p99": 185962.691,
+      "max": 187375.135
+    },
+    "native_roundtrip_us": {
+      "count": 414,
+      "sample_count": 414,
+      "mean": 238.667,
+      "p50": 136.587,
+      "p99": 1332.262,
+      "max": 19685.301
+    },
+    "journal_commit_us": {
+      "count": 414,
+      "sample_count": 414,
+      "mean": 483.144,
+      "p50": 292.682,
+      "p99": 846.458,
+      "max": 51099.125
+    },
+    "receive_to_publish_us": {
+      "count": 387,
+      "sample_count": 387,
+      "mean": 11897.52,
+      "p50": 672.846,
+      "p99": 187212.048,
+      "max": 205732.61
+    },
+    "recovery_us": {
+      "count": 1,
+      "sample_count": 1,
+      "mean": 9887085.759,
+      "p50": 9887085.759,
+      "p99": 9887085.759,
+      "max": 9887085.759
+    }
+  },
+  "last_trusted": {
+    "status": "applied",
+    "trusted": true,
+    "generation": 2,
+    "sequence": 399,
+    "reason": "ok",
+    "bid_levels": 22135,
+    "ask_levels": 19312,
+    "gaps": 1,
+    "duplicates": 0,
+    "snapshots": 2,
+    "digest": "04ef9d5a109f8d17",
+    "bid": [
+      8327672000000,
+      26785248
+    ],
+    "ask": [
+      8327673000000,
+      1601404
+    ]
+  },
+  "final": {
+    "status": "invalidated",
+    "trusted": false,
+    "generation": 2,
+    "sequence": null,
+    "reason": "stopped",
+    "bid_levels": 0,
+    "ask_levels": 0,
+    "gaps": 1,
+    "duplicates": 0,
+    "snapshots": 2,
+    "digest": "45eb196e7403039f",
+    "bid": null,
+    "ask": null
+  },
+  "error": null,
+  "journal": "examples/live-gap-recovery.sqlite.gz",
+  "source": "Coinbase Advanced Trade public level2",
+  "validation": {
+    "commands": 414,
+    "integrity": "verified",
+    "last_trusted": {
+      "status": "applied",
+      "trusted": true,
+      "generation": 2,
+      "sequence": 399,
+      "reason": "ok",
+      "bid_levels": 22135,
+      "ask_levels": 19312,
+      "gaps": 1,
+      "duplicates": 0,
+      "snapshots": 2,
+      "digest": "04ef9d5a109f8d17",
+      "bid": [
+        8327672000000,
+        26785248
+      ],
+      "ask": [
+        8327673000000,
+        1601404
+      ]
+    },
+    "final": {
+      "status": "invalidated",
+      "trusted": false,
+      "generation": 2,
+      "sequence": null,
+      "reason": "stopped",
+      "bid_levels": 0,
+      "ask_levels": 0,
+      "gaps": 1,
+      "duplicates": 0,
+      "snapshots": 2,
+      "digest": "45eb196e7403039f",
+      "bid": null,
+      "ask": null
+    }
+  },
+  "journal_sha256": "996412142b48a4a97d0ab37f698822ae0037f2a86140e1d17e9ff1c19cbe769b",
+  "environment": {
+    "os": "Linux x86-64 virtualized",
+    "cpu": "AMD EPYC 9V74 virtual CPU",
+    "compiler": "GCC 13.3",
+    "python": "3.12.14",
+    "websockets": "16.0"
+  }
+}

@@ -1,0 +1,12 @@
+build/
+build-sanitize/
+build-cmake/
+.venv/
+__pycache__/
+*.pyc
+data/
+results/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+.DS_Store

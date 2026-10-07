@@ -1,0 +1,519 @@
+{
+  "source": "synthetic",
+  "passed": 5,
+  "scenarios": [
+    {
+      "product": "BTC-USD",
+      "elapsed_seconds": 0.190397,
+      "metrics": {
+        "received": 50,
+        "processed": 50,
+        "control_processed": 0,
+        "published": 50,
+        "snapshots": 1,
+        "reconnects": 0,
+        "injected_drops": 0,
+        "invalidations": {},
+        "queue_peak_messages": 1,
+        "queue_peak_bytes": 4582,
+        "queue_dwell_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 23.308,
+          "p50": 20.01,
+          "p99": 71.689,
+          "max": 71.689
+        },
+        "native_roundtrip_us": {
+          "count": 52,
+          "sample_count": 52,
+          "mean": 162.493,
+          "p50": 122.986,
+          "p99": 1363.559,
+          "max": 1363.559
+        },
+        "journal_commit_us": {
+          "count": 52,
+          "sample_count": 52,
+          "mean": 237.373,
+          "p50": 225.661,
+          "p99": 456.139,
+          "max": 456.139
+        },
+        "receive_to_publish_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 445.761,
+          "p50": 429.97,
+          "p99": 619.946,
+          "max": 619.946
+        },
+        "recovery_us": {
+          "count": 0,
+          "sample_count": 0,
+          "mean": 0,
+          "p50": 0,
+          "p99": 0,
+          "max": 0.0
+        }
+      },
+      "last_trusted": {
+        "status": "applied",
+        "trusted": true,
+        "generation": 1,
+        "sequence": 49,
+        "reason": "ok",
+        "bid_levels": 24,
+        "ask_levels": 31,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 1,
+        "digest": "6f7ef84059f55367",
+        "bid": [
+          1000000000000,
+          100000000
+        ],
+        "ask": [
+          1000200000000,
+          100000000
+        ]
+      },
+      "final": {
+        "status": "invalidated",
+        "trusted": false,
+        "generation": 1,
+        "sequence": null,
+        "reason": "stopped",
+        "bid_levels": 0,
+        "ask_levels": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 1,
+        "digest": "9c5431c76bb66f44",
+        "bid": null,
+        "ask": null
+      },
+      "error": null,
+      "source": "deterministic synthetic Coinbase-format feed",
+      "verified_publications": 50,
+      "replay": {
+        "commands": 52,
+        "integrity": "verified",
+        "commands_per_second": 7065.99
+      },
+      "scenario": "baseline"
+    },
+    {
+      "product": "BTC-USD",
+      "elapsed_seconds": 0.196564,
+      "metrics": {
+        "received": 52,
+        "processed": 50,
+        "control_processed": 0,
+        "published": 50,
+        "snapshots": 2,
+        "reconnects": 1,
+        "injected_drops": 1,
+        "invalidations": {
+          "sequence_gap": 1
+        },
+        "queue_peak_messages": 1,
+        "queue_peak_bytes": 5017,
+        "queue_dwell_us": {
+          "count": 51,
+          "sample_count": 51,
+          "mean": 33.548,
+          "p50": 29.965,
+          "p99": 121.333,
+          "max": 121.333
+        },
+        "native_roundtrip_us": {
+          "count": 55,
+          "sample_count": 55,
+          "mean": 138.718,
+          "p50": 103.997,
+          "p99": 1353.244,
+          "max": 1353.244
+        },
+        "journal_commit_us": {
+          "count": 55,
+          "sample_count": 55,
+          "mean": 240.952,
+          "p50": 217.008,
+          "p99": 1334.406,
+          "max": 1334.406
+        },
+        "receive_to_publish_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 441.622,
+          "p50": 392.433,
+          "p99": 1658.605,
+          "max": 1658.605
+        },
+        "recovery_us": {
+          "count": 1,
+          "sample_count": 1,
+          "mean": 4408.838,
+          "p50": 4408.838,
+          "p99": 4408.838,
+          "max": 4408.838
+        }
+      },
+      "last_trusted": {
+        "status": "applied",
+        "trusted": true,
+        "generation": 2,
+        "sequence": 42,
+        "reason": "ok",
+        "bid_levels": 24,
+        "ask_levels": 32,
+        "gaps": 1,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "3939f5976dcbfa0d",
+        "bid": [
+          1000000000000,
+          100000000
+        ],
+        "ask": [
+          1000200000000,
+          100000000
+        ]
+      },
+      "final": {
+        "status": "invalidated",
+        "trusted": false,
+        "generation": 2,
+        "sequence": null,
+        "reason": "stopped",
+        "bid_levels": 0,
+        "ask_levels": 0,
+        "gaps": 1,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "45eb196e7403039f",
+        "bid": null,
+        "ask": null
+      },
+      "error": null,
+      "source": "deterministic synthetic Coinbase-format feed",
+      "verified_publications": 50,
+      "replay": {
+        "commands": 55,
+        "integrity": "verified",
+        "commands_per_second": 6926.82
+      },
+      "scenario": "dropped_message"
+    },
+    {
+      "product": "BTC-USD",
+      "elapsed_seconds": 0.190869,
+      "metrics": {
+        "received": 51,
+        "processed": 50,
+        "control_processed": 0,
+        "published": 50,
+        "snapshots": 2,
+        "reconnects": 1,
+        "injected_drops": 0,
+        "invalidations": {
+          "injected_disconnect": 1
+        },
+        "queue_peak_messages": 1,
+        "queue_peak_bytes": 4908,
+        "queue_dwell_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 36.417,
+          "p50": 30.907,
+          "p99": 253.283,
+          "max": 253.283
+        },
+        "native_roundtrip_us": {
+          "count": 54,
+          "sample_count": 54,
+          "mean": 139.83,
+          "p50": 115.564,
+          "p99": 1318.731,
+          "max": 1318.731
+        },
+        "journal_commit_us": {
+          "count": 54,
+          "sample_count": 54,
+          "mean": 240.748,
+          "p50": 202.676,
+          "p99": 844.777,
+          "max": 844.777
+        },
+        "receive_to_publish_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 452.457,
+          "p50": 415.708,
+          "p99": 1031.818,
+          "max": 1031.818
+        },
+        "recovery_us": {
+          "count": 1,
+          "sample_count": 1,
+          "mean": 4364.06,
+          "p50": 4364.06,
+          "p99": 4364.06,
+          "max": 4364.06
+        }
+      },
+      "last_trusted": {
+        "status": "applied",
+        "trusted": true,
+        "generation": 2,
+        "sequence": 42,
+        "reason": "ok",
+        "bid_levels": 24,
+        "ask_levels": 31,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "ded217897e88317f",
+        "bid": [
+          1000000000000,
+          100000000
+        ],
+        "ask": [
+          1000200000000,
+          100000000
+        ]
+      },
+      "final": {
+        "status": "invalidated",
+        "trusted": false,
+        "generation": 2,
+        "sequence": null,
+        "reason": "stopped",
+        "bid_levels": 0,
+        "ask_levels": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "45eb196e7403039f",
+        "bid": null,
+        "ask": null
+      },
+      "error": null,
+      "source": "deterministic synthetic Coinbase-format feed",
+      "verified_publications": 50,
+      "replay": {
+        "commands": 54,
+        "integrity": "verified",
+        "commands_per_second": 6474.33
+      },
+      "scenario": "disconnect"
+    },
+    {
+      "product": "BTC-USD",
+      "elapsed_seconds": 0.207558,
+      "metrics": {
+        "received": 56,
+        "processed": 50,
+        "control_processed": 0,
+        "published": 50,
+        "snapshots": 2,
+        "reconnects": 1,
+        "injected_drops": 0,
+        "invalidations": {
+          "queue_overflow": 1
+        },
+        "queue_peak_messages": 4,
+        "queue_peak_bytes": 5017,
+        "queue_dwell_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 22.325,
+          "p50": 19.72,
+          "p99": 70.276,
+          "max": 70.276
+        },
+        "native_roundtrip_us": {
+          "count": 54,
+          "sample_count": 54,
+          "mean": 145.256,
+          "p50": 110.677,
+          "p99": 1579.896,
+          "max": 1579.896
+        },
+        "journal_commit_us": {
+          "count": 54,
+          "sample_count": 54,
+          "mean": 236.533,
+          "p50": 202.986,
+          "p99": 668.96,
+          "max": 668.96
+        },
+        "receive_to_publish_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 420.792,
+          "p50": 382.328,
+          "p99": 870.395,
+          "max": 870.395
+        },
+        "recovery_us": {
+          "count": 1,
+          "sample_count": 1,
+          "mean": 4751.887,
+          "p50": 4751.887,
+          "p99": 4751.887,
+          "max": 4751.887
+        }
+      },
+      "last_trusted": {
+        "status": "applied",
+        "trusted": true,
+        "generation": 2,
+        "sequence": 45,
+        "reason": "ok",
+        "bid_levels": 25,
+        "ask_levels": 32,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "d8a42618a02a183e",
+        "bid": [
+          1000000000000,
+          100000000
+        ],
+        "ask": [
+          1000200000000,
+          100000000
+        ]
+      },
+      "final": {
+        "status": "invalidated",
+        "trusted": false,
+        "generation": 2,
+        "sequence": null,
+        "reason": "stopped",
+        "bid_levels": 0,
+        "ask_levels": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "45eb196e7403039f",
+        "bid": null,
+        "ask": null
+      },
+      "error": null,
+      "source": "deterministic synthetic Coinbase-format feed",
+      "verified_publications": 50,
+      "replay": {
+        "commands": 54,
+        "integrity": "verified",
+        "commands_per_second": 8070.98
+      },
+      "scenario": "slow_consumer"
+    },
+    {
+      "product": "BTC-USD",
+      "elapsed_seconds": 0.217113,
+      "metrics": {
+        "received": 58,
+        "processed": 50,
+        "control_processed": 0,
+        "published": 50,
+        "snapshots": 2,
+        "reconnects": 1,
+        "injected_drops": 0,
+        "invalidations": {
+          "stale_processing": 1
+        },
+        "queue_peak_messages": 7,
+        "queue_peak_bytes": 5017,
+        "queue_dwell_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 20.604,
+          "p50": 19.489,
+          "p99": 62.634,
+          "max": 62.634
+        },
+        "native_roundtrip_us": {
+          "count": 54,
+          "sample_count": 54,
+          "mean": 137.283,
+          "p50": 105.93,
+          "p99": 1254.484,
+          "max": 1254.484
+        },
+        "journal_commit_us": {
+          "count": 54,
+          "sample_count": 54,
+          "mean": 229.249,
+          "p50": 206.812,
+          "p99": 414.385,
+          "max": 414.385
+        },
+        "receive_to_publish_us": {
+          "count": 50,
+          "sample_count": 50,
+          "mean": 416.04,
+          "p50": 395.237,
+          "p99": 778.555,
+          "max": 778.555
+        },
+        "recovery_us": {
+          "count": 1,
+          "sample_count": 1,
+          "mean": 4533.867,
+          "p50": 4533.867,
+          "p99": 4533.867,
+          "max": 4533.867
+        }
+      },
+      "last_trusted": {
+        "status": "applied",
+        "trusted": true,
+        "generation": 2,
+        "sequence": 45,
+        "reason": "ok",
+        "bid_levels": 25,
+        "ask_levels": 32,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "29fd1e5eeca8f9c6",
+        "bid": [
+          1000000000000,
+          100000000
+        ],
+        "ask": [
+          1000200000000,
+          100000000
+        ]
+      },
+      "final": {
+        "status": "invalidated",
+        "trusted": false,
+        "generation": 2,
+        "sequence": null,
+        "reason": "stopped",
+        "bid_levels": 0,
+        "ask_levels": 0,
+        "gaps": 0,
+        "duplicates": 0,
+        "snapshots": 2,
+        "digest": "45eb196e7403039f",
+        "bid": null,
+        "ask": null
+      },
+      "error": null,
+      "source": "deterministic synthetic Coinbase-format feed",
+      "verified_publications": 50,
+      "replay": {
+        "commands": 54,
+        "integrity": "verified",
+        "commands_per_second": 6221.62
+      },
+      "scenario": "stale_backlog"
+    }
+  ]
+}

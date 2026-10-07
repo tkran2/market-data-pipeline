@@ -1,0 +1,143 @@
+{
+  "product": "BTC-USD",
+  "elapsed_seconds": 35.005631,
+  "metrics": {
+    "received": 533,
+    "processed": 505,
+    "control_processed": 28,
+    "published": 505,
+    "snapshots": 1,
+    "reconnects": 0,
+    "injected_drops": 0,
+    "invalidations": {},
+    "queue_peak_messages": 17,
+    "queue_peak_bytes": 4578287,
+    "queue_dwell_us": {
+      "count": 533,
+      "sample_count": 533,
+      "mean": 5253.365,
+      "p50": 39.81,
+      "p99": 185951.114,
+      "max": 188056.831
+    },
+    "native_roundtrip_us": {
+      "count": 535,
+      "sample_count": 535,
+      "mean": 192.677,
+      "p50": 138.118,
+      "p99": 1328.129,
+      "max": 17084.588
+    },
+    "journal_commit_us": {
+      "count": 535,
+      "sample_count": 535,
+      "mean": 368.624,
+      "p50": 291.26,
+      "p99": 838.647,
+      "max": 33468.062
+    },
+    "receive_to_publish_us": {
+      "count": 505,
+      "sample_count": 505,
+      "mean": 5743.826,
+      "p50": 600.567,
+      "p99": 186128.934,
+      "max": 188352.059
+    },
+    "recovery_us": {
+      "count": 0,
+      "sample_count": 0,
+      "mean": 0,
+      "p50": 0,
+      "p99": 0,
+      "max": 0.0
+    }
+  },
+  "last_trusted": {
+    "status": "applied",
+    "trusted": true,
+    "generation": 1,
+    "sequence": 532,
+    "reason": "ok",
+    "bid_levels": 22119,
+    "ask_levels": 19291,
+    "gaps": 0,
+    "duplicates": 0,
+    "snapshots": 1,
+    "digest": "149674c7ac864eda",
+    "bid": [
+      8328349000000,
+      24017676
+    ],
+    "ask": [
+      8328350000000,
+      75390665
+    ]
+  },
+  "final": {
+    "status": "invalidated",
+    "trusted": false,
+    "generation": 1,
+    "sequence": null,
+    "reason": "stopped",
+    "bid_levels": 0,
+    "ask_levels": 0,
+    "gaps": 0,
+    "duplicates": 0,
+    "snapshots": 1,
+    "digest": "9c5431c76bb66f44",
+    "bid": null,
+    "ask": null
+  },
+  "error": null,
+  "journal": "examples/live-baseline.sqlite.gz",
+  "source": "Coinbase Advanced Trade public level2",
+  "validation": {
+    "commands": 535,
+    "integrity": "verified",
+    "last_trusted": {
+      "status": "applied",
+      "trusted": true,
+      "generation": 1,
+      "sequence": 532,
+      "reason": "ok",
+      "bid_levels": 22119,
+      "ask_levels": 19291,
+      "gaps": 0,
+      "duplicates": 0,
+      "snapshots": 1,
+      "digest": "149674c7ac864eda",
+      "bid": [
+        8328349000000,
+        24017676
+      ],
+      "ask": [
+        8328350000000,
+        75390665
+      ]
+    },
+    "final": {
+      "status": "invalidated",
+      "trusted": false,
+      "generation": 1,
+      "sequence": null,
+      "reason": "stopped",
+      "bid_levels": 0,
+      "ask_levels": 0,
+      "gaps": 0,
+      "duplicates": 0,
+      "snapshots": 1,
+      "digest": "9c5431c76bb66f44",
+      "bid": null,
+      "ask": null
+    }
+  },
+  "journal_sha256": "6f265a310a2d8f1c5508506b750ca580dd9967cae8caeb6cb352ab14ab12ec22",
+  "environment": {
+    "os": "Linux x86-64 virtualized",
+    "cpu": "AMD EPYC 9V74 virtual CPU",
+    "compiler": "GCC 13.3",
+    "python": "3.12.14",
+    "websockets": "16.0"
+  }
+}

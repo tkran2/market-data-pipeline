@@ -1,0 +1,37 @@
+name: build-and-recovery-tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: make -j2 test PYTHON=python
+      - run: make sanitize PYTHON=python
+      - run: ./build/core-bench --events 10000 --trials 1
+      - run: python -m mdpipe faults --output results/fault-suite
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: recovery-report-${{ matrix.os }}
+          path: results/fault-suite/report.json
+  cmake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - run: cmake -S . -B build-cmake -DCMAKE_BUILD_TYPE=Release
+      - run: cmake --build build-cmake -j2
+      - run: ctest --test-dir build-cmake --output-on-failure
